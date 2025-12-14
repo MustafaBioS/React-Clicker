@@ -1,26 +1,37 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html, body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-Inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.santa {
+  height: 600px;
+  width: 600px;
+  transition: all 0.3s ease;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.santa:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.santaBtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.counter {
+  font-size: 50px;
+  color: white;
 }
