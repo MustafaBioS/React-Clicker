@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/santa.png"/>
+      </head>
       <body className={`${InterF.variable}`}>
         {children}
       </body>
